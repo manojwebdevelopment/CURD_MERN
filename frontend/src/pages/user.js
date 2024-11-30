@@ -63,7 +63,7 @@ function User() {
       try {
         // Send DELETE request to backend
         const response = await axios.delete(
-          `https://curd-mern.onrender.com/delete/${id}`
+          `https://curd-mern-1.onrender.com/delete/${id}`
         );
         const message = response.data.message;
 
