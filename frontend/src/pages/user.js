@@ -51,7 +51,7 @@ function User() {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("https://curd-mern.onrender.com/users");
+      const response = await axios.get("https://curd-mern-1.onrender.com/users");
       setUsers(response.data);
     } catch (err) {
       console.log(err);
