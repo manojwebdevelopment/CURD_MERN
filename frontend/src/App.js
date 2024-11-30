@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import User from "./Component/User";
-import Create from "./Component/Create";
-import Update from "./Component/Update";
+import User from "./pages/user";
+import Create from "./pages/create";
+import Update from "./pages/update";
 
 function App() {
   return (

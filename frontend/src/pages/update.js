@@ -147,7 +147,7 @@ function Update() {
   useEffect(() => {
     const userfetch = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/user/${id}`); // Adjusted to GET for fetching
+        const response = await axios.get(`https://curd-mern.onrender.com/user/${id}`); // Adjusted to GET for fetching
         setUser(response.data); // Update the state with fetched user data 
       } catch (err) {
         console.log(err);
@@ -180,7 +180,7 @@ function Update() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put(`http://localhost:5000/update/${id}`, user); // Pass the ID in the URL
+      const response = await axios.put(`https://curd-mern.onrender.com/update/${id}`, user); // Pass the ID in the URL
       // Store the success message in sessionStorage
       localStorage.setItem("updateMessage", "User updated successfully"); // Store message in sessionStorage
       navigate("/"); // Navigate to the user list

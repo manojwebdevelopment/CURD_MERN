@@ -51,7 +51,7 @@ function User() {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/users");
+      const response = await axios.get("https://curd-mern.onrender.com/users");
       setUsers(response.data);
     } catch (err) {
       console.log(err);
@@ -63,7 +63,7 @@ function User() {
       try {
         // Send DELETE request to backend
         const response = await axios.delete(
-          `http://localhost:5000/delete/${id}`
+          `https://curd-mern.onrender.com/delete/${id}`
         );
         const message = response.data.message;
 

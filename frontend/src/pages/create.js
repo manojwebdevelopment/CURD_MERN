@@ -15,7 +15,7 @@ function Create() {
     const handlecreate = async (e)=>{
         e.preventDefault();
         try{
-            const res = await axios.post('http://localhost:5000/create',{name,email,age});
+            const res = await axios.post('https://curd-mern.onrender.com/create',{name,email,age});
             setMessage(res.data.message || "User created successfully!");
             localStorage.setItem("createMessage","User created successfully!");
             navigate("/");
