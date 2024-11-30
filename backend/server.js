@@ -5,7 +5,8 @@ const curdRoutes = require("./routes/curdRoutes");
 const dotenv = require("dotenv");
 
 const app = express();
-app.use(dotenv());
+dotenv.config();
+
 
 app.use(
   cors({
