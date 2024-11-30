@@ -10,7 +10,7 @@ dotenv.config();
 
 app.use(
   cors({
-    origin: "https://curd-mern-5ams0wh6w-manoj-kumars-projects-16f3983b.vercel.app/",
+    origin: "https://curd-mern-5ams0wh6w-manoj-kumars-projects-16f3983b.vercel.app",
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   })
 );
